@@ -1,0 +1,26 @@
+/* STYLESHEET TABLE OF CONTENTS
+    1 Setup
+        1.1 Variables
+    2 General elements
+
+    3 Specific sections
+
+    4 Useless elements
+ */
+
+// 1.1 Variables
+$DM-Header-Background: #3d3d3d;
+$DM-Card-Gray: #505050;
+$DM-Body-Background: #333;
+$Menu-Btn-Gray: #505050;
+$DM-Text-Colour: #fefffe;
+$Site-Default-Red: #ed0929;
+$Site-Darker-Red: rgba(179, 8, 31, 0.5);
+$song-info: 30em;
+
+
+.game-sec
+{
+  background: $DM-Body-Background;
+  height: 100px;
+}
