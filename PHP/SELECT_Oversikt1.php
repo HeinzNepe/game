@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta https-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="text/stylesheet" href="../CSS/php.css">
 </head>
 <body>
    
@@ -22,48 +23,36 @@
  $kobling = new mysqli($tjener, $brukernavn, $passord, $database);
 
 
- // Sjekk om koblingen virker
-if ($kobling->connect_error) {
-die("Noe gikk galt: " . $kobling->connect_error);
-}
- else {
-echo "Koblingen virker"; }
+// Sjekk om koblingen virker
+//if ($kobling->connect_error) {
+//die("Noe gikk galt: " . $kobling->connect_error);
+//}
+// else {
+//echo "Koblingen virker"; }
 
 
  //Angi UTF-8 som tegnsett
  $kobling->set_charset("utf8");
-$sql = "SELECT *";
+$sql = "SELECT name, score, timestamp FROM `highscore` WHERE 1";
 $resultat = $kobling->query($sql);
 echo "<table>"; // Starter tabellen
 echo "<tr>"; // Lager en rad med overskrifter
- echo "<th>Beskrivelse</th>";
- echo "<th>Kilde</th>";
- echo "<th>Fornavn</th>";
- echo "<th>Etternavn</th>";
- echo "<th>Dato</th>";
- echo "<th>Forfatter ID</th>";
- echo "<th>Artikkel ID</th>";
+ echo "<th>Name</th>";
+ echo "<th>Score</th>";
+ echo "<th>Time</th>";
 
 
 echo "</tr>";
 
 while($rad = $resultat->fetch_assoc()) {
-    $Dato= $rad["Date"];
-    $FID = $rad["ForfatterID"];
-    $FF = $rad["Fornavn"];
-    $FE = $rad["Etternavn"];
-    $AID = $rad["ArtikkelID"];
-    $Kilde = $rad["Kilde"];
-    $ABeskrivelse = $rad["Beskrivelse"];
+    $NM= $rad["name"];
+    $SC = $rad["score"];
+    $TM = $rad["timestamp"];
    
     echo "<tr>";
-    echo "<td>$ABeskrivelse</td>";
-    echo "<td>$Kilde</td>";
-    echo "<td>$FF</td>";
-    echo "<td>$FE</td>";
-    echo "<td>$Dato</td>";
-    echo "<td>$AID</td>";
-    echo "<td>$FID</td>";
+    echo "<td>$NM</td>";
+    echo "<td>$SC</td>";
+    echo "<td>$TM</td>";
    
     echo "</tr>";
    }

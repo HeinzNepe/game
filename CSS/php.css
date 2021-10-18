@@ -2,7 +2,10 @@
     1 Setup
         1.1 Variables
     2 General elements
-
+        2.1 About
+        2.2 Game
+        2.3 Highscore
+          2.3.1 Table
     3 Specific sections
 
     4 Useless elements
@@ -17,6 +20,12 @@
 .game-sec {
   background: #333;
   padding: 2em;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 1em;
 }
 
 /*# sourceMappingURL=php.css.map */
