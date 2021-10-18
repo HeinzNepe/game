@@ -18,9 +18,19 @@ $Site-Default-Red: #ed0929;
 $Site-Darker-Red: rgba(179, 8, 31, 0.5);
 $song-info: 30em;
 
+// 2.2 Section for about
+.about-sec
+{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  max-width: 70ch;
+  display: revert;
+}
 
+
+// 2.2 Section for game
 .game-sec
 {
   background: $DM-Body-Background;
-  height: 100px;
+  padding: 2em;
 }

@@ -7,9 +7,16 @@
 
     4 Useless elements
  */
+.about-sec {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  max-width: 70ch;
+  display: revert;
+}
+
 .game-sec {
   background: #333;
-  height: 100px;
+  padding: 2em;
 }
 
 /*# sourceMappingURL=php.css.map */

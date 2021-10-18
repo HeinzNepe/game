@@ -46,7 +46,25 @@
     <section class="game-sec">
 
         <div class="main-flex" id="main-content">
-            <p>Hello</p>
+            <section class="about-sec">
+                <h>The coin flip</h>
+                <p>Hello. My name is Dr. Glenn Pierce</p>
+                <a href="PHP/dataterminal.php">Here</a>
+            </section>
+            <section>
+                <!--Her er innholdet på siden -->
+                <h1 class="headmain">PHP controlsite</h1> <br />
+                <div class="paramain">
+
+                    <h1>Legge inn kilder i databasen</h1>
+
+                    <!--Legger inn php (legg inn i databasen og nåværende innhold i databasen)-->
+                    <?php
+                    include 'PHP/Select_Oversikt1.php'
+                    ?>
+                </div>
+
+            </section>
 
             <footer>
                 <div id="footer-pre"></div>
