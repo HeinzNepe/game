@@ -28,4 +28,8 @@ table, th, td {
   padding: 1em;
 }
 
+table {
+  margin: 2em;
+}
+
 /*# sourceMappingURL=php.css.map */

@@ -52,18 +52,12 @@
                 <a href="PHP/dataterminal.php">Here</a>
             </section>
             <section>
-                <!--Her er innholdet på siden -->
-                <h1 class="headmain">PHP controlsite</h1> <br />
-                <div class="paramain">
+                <h1>Current highscores</h1>
 
-                    <h1>Legge inn kilder i databasen</h1>
-
-                    <!--Legger inn php (legg inn i databasen og nåværende innhold i databasen)-->
-                    <?php
-                    include 'PHP/Select_Oversikt1.php'
-                    ?>
-                </div>
-
+                <!--Legger inn php (legg inn i databasen og nåværende innhold i databasen)-->
+                <?php
+                include 'PHP/Select_Oversikt1.php'
+                ?>
             </section>
 
             <footer>
