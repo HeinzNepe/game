@@ -44,22 +44,31 @@
 
 <section class="content-sec">
     <section class="game-sec">
-
         <div class="main-flex" id="main-content">
             <section class="about-sec">
                 <h>The coin flip</h>
                 <p>Hello. My name is Dr. Glenn Pierce</p>
             </section>
-            <section>
+
+            <section class="game-sec">
+                <!-- These buttons are going to let the player choose heads or tails -->
+                <div>
+                    <button class="button" onclick="guess(1)">Heads</button>
+                    <button class="button" onclick="guess(0)">Tails</button>
+                </div>
+                <div>
+                    <p id="guess-output"></p>
+                </div>
+                <!-- This button starts the toss function linked underneath-->
+                <button class="button" onclick="tossfunction()">Flip a coin</button>
+                <script src="JS/index.js"></script>
+            </section>
+
+            <section class="highscore-sec">
                 <h1>Current highscores</h1>
 
-                <!--Legger inn php (legg inn i databasen og nåværende innhold i databasen)-->
+                <!--Include the php thing (DONT MESS WITH THIS PLEASE)-->
                 <?php
-
-                ini_set('display_errors', 1);
-                ini_set('display_startup_errors', 1);
-                error_reporting(E_ALL);
-
 
                 require($_SERVER['DOCUMENT_ROOT']."/Oversikt1.php");
 
@@ -70,10 +79,7 @@
                 <div id="footer-pre"></div>
             </footer>
         </div>
-
-
     </section>
-
 </section>
 
 <section class="scripts">

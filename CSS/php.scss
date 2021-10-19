@@ -4,6 +4,7 @@
     2 General elements
         2.1 About
         2.2 Game
+          2.2.1 Button
         2.3 Highscore
           2.3.1 Table
     3 Specific sections
@@ -36,6 +37,20 @@ $song-info: 30em;
 {
   background: $DM-Body-Background;
   padding: 2em;
+}
+
+//2.2.1 Button
+.button {
+  background-color: $Site-Default-Red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 
