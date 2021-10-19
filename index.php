@@ -58,6 +58,7 @@
                 </div>
                 <div>
                     <p id="guess-output"></p>
+                    <p id="game-output"></p>
                 </div>
                 <!-- This button starts the toss function linked underneath-->
                 <button class="button" onclick="tossfunction()">Flip a coin</button>

@@ -4,6 +4,7 @@ let resultnum;
 let result;
 
 let guessed;
+let score = 0;
 
 // Creates function flip. Resultnum is random number between 0 and 1
 // Turns 0 into heads and 1 into tails
@@ -36,12 +37,16 @@ function guess(x) {
 
 //This makes the function
 function tossfunction() {
-    console.log("flipping coin...")
+    //console.log("flipping coin...")
     console.log("it was " + flip())
-    if (guessed === flip()) {
+    if (guessed === result) {
         console.log("you were right")
+        score++;
+        document.getElementById("game-output").innerHTML = score;
     }
     else {
         console.log("you were wrong")
+        score = 0;
+        document.getElementById("game-output").innerHTML = score;
     }
 }
