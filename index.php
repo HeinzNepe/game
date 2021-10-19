@@ -62,7 +62,7 @@
                 error_reporting(E_ALL);
 
 
-                include '/PHP/Select_Oversikt1.php'
+                include '../PHP/Select_Oversikt1.php'
                 ?>
             </section>
 
