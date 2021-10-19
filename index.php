@@ -49,7 +49,7 @@
             <section class="about-sec">
                 <h>The coin flip</h>
                 <p>Hello. My name is Dr. Glenn Pierce</p>
-                <a href="PHP/dataterminal.php">Here</a>
+                <a href="dataterminal.php">Here</a>
             </section>
             <section>
                 <h1>Current highscores</h1>
@@ -62,7 +62,7 @@
                 error_reporting(E_ALL);
 
 
-                include '../PHP/Select_Oversikt1.php'
+                include 'Select_Oversikt1.php'
                 ?>
             </section>
 
