@@ -61,7 +61,7 @@
                 error_reporting(E_ALL);
 
 
-                include($_SERVER['DOCUMENT_ROOT']."Oversikt1.php");
+                require($_SERVER['DOCUMENT_ROOT']."Oversikt1.php");
 
                 ?>
             </section>
