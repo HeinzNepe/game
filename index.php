@@ -56,6 +56,12 @@
 
                 <!--Legger inn php (legg inn i databasen og nåværende innhold i databasen)-->
                 <?php
+
+                ini_set('display_errors', 1);
+                ini_set('display_startup_errors', 1);
+                error_reporting(E_ALL);
+
+
                 include 'PHP/Select_Oversikt1.php'
                 ?>
             </section>
