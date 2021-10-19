@@ -23,11 +23,13 @@ function guess(x) {
         guessed = "heads"
         console.log("Guessed heads")
         document.getElementById("guess-output").innerHTML = "You are guessing: Heads"
+        return guessed
     }
     else {
         guessed = "tails"
         console.log("Guessed tails")
         document.getElementById("guess-output").innerHTML = "You are guessing: Tails"
+        return guessed
     }
 }
 
@@ -36,4 +38,10 @@ function guess(x) {
 function tossfunction() {
     console.log("flipping coin...")
     console.log("it was " + flip())
+    if (guessed === flip()) {
+        console.log("you were right")
+    }
+    else {
+        console.log("you were wrong")
+    }
 }
