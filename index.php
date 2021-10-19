@@ -61,8 +61,8 @@
                 error_reporting(E_ALL);
 
 
-                include($_SERVER['DOCUMENT_ROOT']."Select_Oversikt1.php");
-                doit();
+                include($_SERVER['DOCUMENT_ROOT']."Oversikt1.php");
+
                 ?>
             </section>
 
