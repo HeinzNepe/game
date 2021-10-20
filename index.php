@@ -60,7 +60,7 @@
                 </div>
 
                 <!-- Form that the js uses to send data to database -->
-                <form id="f1" method="POST">
+                <form id="f1" method="POST" >
                     <input type="hidden" id="p1" name="GamerTag" value="">
                     <input type="hidden" id="p2" name="Kilde" value="">
                 </form>
@@ -116,8 +116,8 @@
 
 
     <!-- JQuery -->
-    <script>console.log("Header Loaded");$("#header-pre").load("//topheinz.com/sections/header.html");</script>
-    <script>console.log("Footer Loaded");$("#footer-pre").load("//topheinz.com/sections/footer.html");</script>
+    <script>$("#header-pre").load("//topheinz.com/sections/header.html");console.log("Header Loaded");</script>
+    <script>$("#footer-pre").load("//topheinz.com/sections/footer.html");console.log("Footer Loaded");</script>
 
 </section>
 </body>
