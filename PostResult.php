@@ -1,9 +1,3 @@
-<form class="form">
-    Name</p>
-    <input id="name-input" type="text" name="GamerTag">
-
-    <input id="nameset-button" type="submit" onclick="namesubmit()" name="setname" value="Set name">
-</form>
 
 
 <?php
@@ -32,7 +26,7 @@ if(isset($_POST["leggtil"]))
     $S = $_POST["Kilde"];
     $ABeskrivelse = $_POST["Beskrivelse"];
 
-    $sql = "INSERT INTO highscore (name, score, timestamp) VALUES ('$GT', '$S', '$ABeskrivelse')";
+    $sql = "INSERT INTO t.highscore (name, score) VALUES ('$GT', '$S')";
 
     //Viser om spørringen ble gjennomført
     if($kobling->query($sql)) {

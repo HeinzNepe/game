@@ -54,7 +54,7 @@
                 <div id="nameinput-sec">
                     <?php
 
-                    require($_SERVER['DOCUMENT_ROOT']."/PostResult.php");
+                    require($_SERVER['DOCUMENT_ROOT']."/forms.php");
 
                     ?>
                 </div>
@@ -88,6 +88,7 @@
                 <?php
 
                 require($_SERVER['DOCUMENT_ROOT']."/Oversikt1.php");
+                require($_SERVER['DOCUMENT_ROOT']."/PostResult.php");
 
                 ?>
             </section>

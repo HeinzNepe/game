@@ -65,6 +65,7 @@ function tossfunction() {
         //console.log("you were wrong")
         score = 0;
         document.getElementById("game-output").innerHTML = score;
+        sendhighscore()
     }
     updatehighscore()
 }
@@ -75,4 +76,15 @@ function updatehighscore() {
         document.getElementById("highscore-output").innerHTML = score;
     }
     //console.log(highscore)
+}
+
+//TODO add the logic for when to send. Fix the php for sending form aswell
+
+function sendhighscore() {
+    $("#p1").val(name);
+    $("#p2").val(highscore)
+    $("#f1").submit()
+    //document.querySelector('#p1').value = name;
+    //document.querySelector('#p2').value = highscore;
+    //document.querySelector("#f1").submit();
 }
