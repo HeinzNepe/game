@@ -51,17 +51,33 @@
             </section>
 
             <section class="game-sec">
+                <div id="nameinput-sec">
+                    <?php
+
+                    require($_SERVER['DOCUMENT_ROOT']."/PostResult.php");
+
+                    ?>
+                </div>
+
                 <!-- These buttons are going to let the player choose heads or tails -->
                 <div>
                     <button class="button" onclick="guess(1)">Heads</button>
                     <button class="button" onclick="guess(0)">Tails</button>
                 </div>
-                <div>
-                    <p id="guess-output"></p>
-                    <p id="game-output"></p>
-                </div>
                 <!-- This button starts the toss function linked underneath-->
                 <button class="button" onclick="tossfunction()">Flip a coin</button>
+
+                <div>
+                    <p>You are guessing:</p>
+                    <p id="guess-output">No guess yet</p></br>
+
+                    <p>Score:</p>
+                    <p id="game-output">No score yet</p></br>
+
+                    <p>Highscore:</p>
+                    <p id="highscore-output">No highscore yet</p></br>
+                </div>
+
                 <script src="JS/index.js"></script>
             </section>
 

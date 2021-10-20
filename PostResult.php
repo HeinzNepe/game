@@ -1,8 +1,8 @@
-</p>
-<form method="POST">
-    <input type="number" name="GamerTag">
-    Name
-    <input type="submit" name="leggtil" value="Legg til">
+<form class="form">
+    Name</p>
+    <input id="name-input" type="text" name="GamerTag">
+
+    <input id="nameset-button" type="submit" onclick="namesubmit()" name="setname" value="Set name">
 </form>
 
 

@@ -7,6 +7,7 @@
           2.2.1 Button
         2.3 Highscore
           2.3.1 Table
+          2.3.2 Form
     3 Specific sections
 
     4 Useless elements
@@ -35,6 +36,9 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+.button:hover {
+  background-color: #b1061e;
+}
 
 table, th, td {
   border: 1px solid white;
@@ -44,6 +48,45 @@ table, th, td {
 
 table {
   margin: 2em;
+}
+
+.form input[type=text], .form select {
+  background: #505050;
+  color: #fefffe;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form input[type=text], .form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form input[type=submit] {
+  width: 100%;
+  background-color: #ed0929;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form input[type=submit]:hover {
+  background-color: #b1061e;
+}
+.form div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=php.css.map */
