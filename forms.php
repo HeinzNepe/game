@@ -7,9 +7,6 @@
 
 
 
-<form id="f1" method="POST" type="submit">
-    <input name="GamerTag" type="text" id="p1" name="leggtil" value="">
-    <input name="Kilde" type="text" id="p2" name="leggtil" value="">
-</form>
+
 
 

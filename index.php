@@ -59,6 +59,15 @@
                     ?>
                 </div>
 
+                <!-- Form that the js uses to send data to database -->
+                <form id="f1" method="POST">
+                    <input type="hidden" id="p1" name="GamerTag" value="">
+                    <input type="hidden" id="p2" name="Kilde" value="">
+                </form>
+                <?php
+                    require($_SERVER['DOCUMENT_ROOT']."/PostResult.php");
+                ?>
+
                 <!-- These buttons are going to let the player choose heads or tails -->
                 <div>
                     <button class="button" onclick="guess(1)">Heads</button>
@@ -67,29 +76,29 @@
                 <!-- This button starts the toss function linked underneath-->
                 <button class="button" onclick="tossfunction()">Flip a coin</button>
 
+                <!-- Outputs game statistics. Guess, Score and Highscore -->
                 <div>
                     <p>You are guessing:</p>
                     <p id="guess-output">No guess yet</p></br>
 
                     <p>Score:</p>
-                    <p id="game-output">No score yet</p></br>
+                    <p id="game-output">0</p></br>
 
                     <p>Highscore:</p>
-                    <p id="highscore-output">No highscore yet</p></br>
+                    <p id="highscore-output">0</p></br>
                 </div>
 
+                <!-- Imports the js -->
                 <script src="JS/index.js"></script>
             </section>
 
+            <!-- Section for loading the highscores -->
             <section class="highscore-sec">
                 <h1>Current highscores</h1>
 
-                <!--Include the php thing (DONT MESS WITH THIS PLEASE)-->
+                <!--(DONT MESS WITH THIS PLEASE)-->
                 <?php
-
                 require($_SERVER['DOCUMENT_ROOT']."/Oversikt1.php");
-                require($_SERVER['DOCUMENT_ROOT']."/PostResult.php");
-
                 ?>
             </section>
 

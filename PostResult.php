@@ -1,5 +1,3 @@
-
-
 <?php
 if(isset($_POST["leggtil"]))
 {
@@ -8,8 +6,8 @@ if(isset($_POST["leggtil"]))
 
     // Tilkoblingsinformasjon
     $tjener = "51.174.65.191:3306";
-    $brukernavn = "HeinzConnect";
-    $passord = "PrivateSQL123Password";
+    $brukernavn = "HeinzConnection";
+    $passord = "SuperSecure123";
     $database = "highscore";
 
     // Opprette en kobling
@@ -24,17 +22,18 @@ if(isset($_POST["leggtil"]))
 
     $GT = $_POST["GamerTag"];
     $S = $_POST["Kilde"];
-    $ABeskrivelse = $_POST["Beskrivelse"];
 
-    $sql = "INSERT INTO t.highscore (name, score) VALUES ('$GT', '$S')";
+    $sql = "INSERT INTO highscore (name, score) VALUES ('$GT', '$S')";
 
     //Viser om spørringen ble gjennomført
     if($kobling->query($sql)) {
-        echo "ArtikkelID spørring ble gjennomført.";
+        echo "Highscore spørring ble gjennomført.";
     } else {
         echo "Noe gikk galt med spørringen $sql ($kobling->error).";
     }
-
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 
 }
 ?>
