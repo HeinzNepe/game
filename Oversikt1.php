@@ -32,7 +32,8 @@
 
  //Angi UTF-8 som tegnsett
  $kobling->set_charset("utf8");
-$sql = "SELECT name, score, timestamp FROM `highscore` WHERE 1";
+$sql = "SELECT name, score, timestamp FROM `highscore` WHERE 1
+ORDER BY score DESC LIMIT 10";
 $resultat = $kobling->query($sql);
 echo "<table>"; // Starter tabellen
 echo "<tr>"; // Lager en rad med overskrifter
