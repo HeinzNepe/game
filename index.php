@@ -36,17 +36,13 @@
     <div id="header-pre"></div>
 </header>
 
-<div class="hidden">
-    <a class="hidden">
-        <div id="hid-img"></div>
-    </a>
-</div>
 
 <section class="content-sec">
     <section class="game-sec">
         <div class="main-flex" id="main-content">
             <section class="about-sec">
                 <h>A coin has been tossed</h>
+                </br>
                 <p>On which side will it land?</p>
             </section>
 
@@ -70,21 +66,27 @@
                 ?>
 
                 <!-- These buttons are going to let the player choose heads or tails -->
-                <div>
+                <div class="ui">
                     <button class="button" onclick="guess('Heads')">Heads</button>
                     <button class="button" onclick="guess('Tails')">Tails</button>
                 </div>
 
                 <!-- Outputs game statistics. Guess, Score and Highscore -->
                 <div>
-                    <p>You are guessing:</p>
-                    <p id="guess-output">No guess yet</p></br>
+                    <div class="outputs">
+                        <div>
+                            <p>Score:</p>
+                            <p id="game-output">0</p>
+                        </div>
 
-                    <p>Score:</p>
-                    <p id="game-output">0</p></br>
+                        <div>
+                            <p>Highscore:</p>
+                            <p id="highscore-output">0</p>
+                        </div>
+                    </div>
 
-                    <p>Highscore:</p>
-                    <p id="highscore-output">0</p></br>
+                    <p>Your answer:</p></br>
+                    <p id="guess-output">Flip the coin, and you will find out</p>
                 </div>
 
                 <!-- Imports the js -->

@@ -22,7 +22,6 @@ let name = localStorage['name'] || false;
 
     function loadlocal() {
         document.getElementById("highscore-output").innerHTML = localStorage['highscore'];
-        document.getElementById("guess-output").innerHTML = localStorage['guessed'];
     }
 
 //Executes the load

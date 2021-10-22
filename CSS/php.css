@@ -5,6 +5,7 @@
         2.1 About
         2.2 Game
           2.2.1 Button
+          2.2.2 UI and output
         2.3 Highscore
           2.3.1 Table
           2.3.2 Form
@@ -14,17 +15,20 @@
  */
 .about-sec {
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   max-width: 70ch;
   display: revert;
 }
 
 .game-sec {
+  font-size: large;
+  min-width: 20em;
   background: #333;
   padding: 2em;
 }
 
 .button {
+  width: 110px;
   background-color: #ed0929;
   border: none;
   color: white;
@@ -38,6 +42,15 @@
 }
 .button:hover {
   background-color: #b1061e;
+}
+
+.ui, .outputs {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2em;
 }
 
 table, th, td {
