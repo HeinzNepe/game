@@ -8,7 +8,7 @@ let guessed = localStorage['guessed'] || false;
 let highscore = localStorage['highscore'] || 0;
 let name = localStorage['name'] || false;
 
-
+//TODO Fix bug where they send duplicate highscore
 
 //Save and load local
     function savelocal() {
@@ -108,7 +108,7 @@ function tossfunction() {
 
 //Inputs the
 function sendhighscore() {
-    $("#p1").val(name.int());
+    $("#p1").val(name);
     $("#p2").val(highscore)
     $("#f1").submit()
     //document.querySelector('#p1').value = name;
