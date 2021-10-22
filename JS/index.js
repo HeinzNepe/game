@@ -12,6 +12,7 @@ let name = localStorage['name'] || false;
 
 //TODO A coin has been flipped. What will it land on?
 //Minst mulig klikk
+//TODO fix score bug where it isn't being reset
 
 
 //Save and load local
