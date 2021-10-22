@@ -10,6 +10,9 @@ let hschange = 0;
 let name = localStorage['name'] || false;
 
 
+//TODO A coin has been flipped. What will it land on?
+//Minst mulig klikk
+
 
 //Save and load local
     function savelocal() {
@@ -54,22 +57,21 @@ let name = localStorage['name'] || false;
         return result
 }
     
-// Turns 1 into Heads and 0 into Tails
+// Sets the input into a let
     function guess(x) {
-        if (x === 1) {
+        if (x === "Heads") {
             guessed = "Heads"
             console.log("Guessed Heads")
-            document.getElementById("guess-output").innerHTML = "Heads"
+            tossfunction()
             savelocal()
         }
         else {
             guessed = "Tails"
             console.log("Guessed Tails")
-            document.getElementById("guess-output").innerHTML = "Tails"
+            tossfunction()
             savelocal()
         }
-        return guessed
-
+        return guessed;
     }
 
 
@@ -79,6 +81,7 @@ function tossfunction() {
     console.log("it was " + flip())
     //Makes sure the result and guess are the same
     if (guessed === result) {
+        document.getElementById("guess-output").innerHTML = ("You were right, it was " + result )
         //console.log("you were right")
         score++;
         console.log(score)
@@ -87,6 +90,7 @@ function tossfunction() {
     }
     //If they guess wrong, set the score to 0 and sends the highscore
     else {
+        document.getElementById("guess-output").innerHTML = ("Sorry kid, it was " + result )
         updatehighscore()
         //console.log("you were wrong")
         document.getElementById("game-output").innerHTML = score;

@@ -46,8 +46,8 @@
     <section class="game-sec">
         <div class="main-flex" id="main-content">
             <section class="about-sec">
-                <h>The coin flip</h>
-                <p>Hello. My name is Dr. Glenn Pierce</p>
+                <h>A coin has been tossed</h>
+                <p>On which side will it land?</p>
             </section>
 
             <section class="game-sec">
@@ -71,11 +71,9 @@
 
                 <!-- These buttons are going to let the player choose heads or tails -->
                 <div>
-                    <button class="button" onclick="guess(1)">Heads</button>
-                    <button class="button" onclick="guess(0)">Tails</button>
+                    <button class="button" onclick="guess('Heads')">Heads</button>
+                    <button class="button" onclick="guess('Tails')">Tails</button>
                 </div>
-                <!-- This button starts the toss function linked underneath-->
-                <button class="button" onclick="tossfunction()">Flip a coin</button>
 
                 <!-- Outputs game statistics. Guess, Score and Highscore -->
                 <div>
