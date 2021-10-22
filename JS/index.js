@@ -6,9 +6,10 @@ let score = 0;
 
 let guessed = localStorage['guessed'] || false;
 let highscore = localStorage['highscore'] || 0;
+let hschange = 0;
 let name = localStorage['name'] || false;
 
-//TODO Fix bug where they send duplicate highscore
+
 
 //Save and load local
     function savelocal() {
@@ -90,7 +91,7 @@ function tossfunction() {
         //console.log("you were wrong")
         score = 0;
         document.getElementById("game-output").innerHTML = score;
-        if (highscore >= 0) {
+        if (hschange === 1) {
             sendhighscore()
         }
     }
@@ -100,6 +101,7 @@ function tossfunction() {
     function updatehighscore() {
         if (score >= highscore) {
             localStorage['highscore'] = score
+            hschange = 1;
             document.getElementById("highscore-output").innerHTML = score;
 
         }
