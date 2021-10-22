@@ -105,7 +105,7 @@ function tossfunction() {
 
 //Inputs the
 function sendhighscore() {
-    $("#p1").val(name);
+    $("#p1").val(name.int());
     $("#p2").val(highscore)
     $("#f1").submit()
     //document.querySelector('#p1').value = name;

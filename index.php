@@ -60,7 +60,7 @@
                 </div>
 
                 <!-- Form that the js uses to send data to database -->
-                <form id="f1" method="POST" >
+                <form id="f1" method="POST">
                     <input type="hidden" id="p1" name="GamerTag" value="">
                     <input type="hidden" id="p2" name="Kilde" value="">
                 </form>

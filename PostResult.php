@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST["leggtil"]))
+if(isset($_POST))
 {
 
     //Dette dokumentet legger inn i Artikkel tabbelen (ArtikkelID, Kilde og Beskrivelse)
