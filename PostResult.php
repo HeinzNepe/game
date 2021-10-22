@@ -21,19 +21,20 @@ if(isset($_POST))
     // Lagrer skjemafeltene i enklere navn
 
     $GT = $_POST["GamerTag"];
-    $S = $_POST["Kilde"];
+    $S = $_POST["Score"];
 
     $sql = "INSERT INTO highscore (name, score) VALUES ('$GT', '$S')";
 
     //Viser om spørringen ble gjennomført
-    if($kobling->query($sql)) {
-        echo "Highscore spørring ble gjennomført.";
-    } else {
-        echo "Noe gikk galt med spørringen $sql ($kobling->error).";
-    }
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+    ($kobling->query($sql)); //{
+    //    echo "Highscore spørring ble gjennomført.";
+    //} else {
+    //    echo "Noe gikk galt med spørringen $sql ($kobling->error).";
+    //}
+
+    //ini_set('display_errors', 1);
+    //ini_set('display_startup_errors', 1);
+    //error_reporting(E_ALL);
 
 }
 ?>

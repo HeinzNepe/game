@@ -18,12 +18,12 @@ let name = localStorage['name'] || false;
     }
 
     function loadlocal() {
-        document.getElementById("highscore-output").innerHTML = localStorage['highscore']
-        document.getElementById("guess-output").innerHTML = localStorage['guessed']
+        document.getElementById("highscore-output").innerHTML = localStorage['highscore'];
+        document.getElementById("guess-output").innerHTML = localStorage['guessed'];
     }
 
 //Executes the load
-loadlocal()
+    loadlocal()
 
 
 //Submit the name
@@ -54,7 +54,7 @@ loadlocal()
         return result
 }
     
-// Turns 0 into Heads and 1 into Tails
+// Turns 1 into Heads and 0 into Tails
     function guess(x) {
         if (x === 1) {
             guessed = "Heads"
@@ -81,15 +81,14 @@ function tossfunction() {
     if (guessed === result) {
         //console.log("you were right")
         score++;
+        console.log(score)
         document.getElementById("game-output").innerHTML = score;
         updatehighscore()
     }
     //If they guess wrong, set the score to 0 and sends the highscore
     else {
-
         updatehighscore()
         //console.log("you were wrong")
-        score = 0;
         document.getElementById("game-output").innerHTML = score;
         if (hschange === 1) {
             sendhighscore()
@@ -100,6 +99,7 @@ function tossfunction() {
 //Updates the highscore
     function updatehighscore() {
         if (score >= highscore) {
+            highscore = score;
             localStorage['highscore'] = score
             hschange = 1;
             document.getElementById("highscore-output").innerHTML = score;
