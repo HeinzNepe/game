@@ -94,7 +94,7 @@ function tossfunction() {
         updatehighscore()
         //console.log("you were wrong")
         document.getElementById("game-output").innerHTML = score;
-        if (hschange === 1) {
+        if (hschange === 1 && score > 0) {
             sendhighscore()
         }
     }
