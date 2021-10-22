@@ -85,11 +85,12 @@ function tossfunction() {
     }
     //If they guess wrong, set the score to 0 and sends the highscore
     else {
+
+        updatehighscore()
+        //console.log("you were wrong")
+        score = 0;
+        document.getElementById("game-output").innerHTML = score;
         if (highscore >= 0) {
-            updatehighscore()
-            //console.log("you were wrong")
-            score = 0;
-            document.getElementById("game-output").innerHTML = score;
             sendhighscore()
         }
     }
