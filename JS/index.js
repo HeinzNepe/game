@@ -10,9 +10,7 @@ let hschange = 0;
 let name = localStorage['name'] || false;
 
 
-//TODO A coin has been flipped. What will it land on?
-//Minst mulig klikk
-//TODO fix score bug where it isn't being reset
+//Add a gif thing?
 
 
 //Save and load local
@@ -93,6 +91,7 @@ function tossfunction() {
         document.getElementById("guess-output").innerHTML = ("Sorry kid, it was " + result )
         updatehighscore()
         //console.log("you were wrong")
+        score = 0;
         document.getElementById("game-output").innerHTML = score;
         if (hschange === 1 && score > 0) {
             sendhighscore()
