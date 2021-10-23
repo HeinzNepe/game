@@ -123,11 +123,12 @@
                 document.getElementById("guess-output").innerHTML = ("Sorry kid, it was " + result )
                 updatehighscore()
                 //console.log("you were wrong")
-                score = 0;
-                document.getElementById("game-output").innerHTML = score;
                 if (hschange === 1 && score > 0) {
                     sendhighscore()
                 }
+                score = 0;
+                document.getElementById("game-output").innerHTML = score;
+
             }
 
     // 2.3.3 When to do what
