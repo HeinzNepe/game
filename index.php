@@ -48,7 +48,7 @@
 
             <section class="game-sec">
                 <div id="nameinput-sec">
-                    <form class="form">
+                    <form class="form" method="get">
                         <p>Name</p>
                         <input id="name-input" placeholder="Input name here" type="text" name="GamerTag">
 
@@ -60,6 +60,7 @@
                 <form id="f1" method="POST">
                     <input type="hidden" id="p1" name="GamerTag">
                     <input type="hidden" id="p2" name="Score">
+                    <input type="hidden" id="p3" name="sender" value="">
                 </form>
                 <?php
                     require($_SERVER['DOCUMENT_ROOT']."/PostResult.php");

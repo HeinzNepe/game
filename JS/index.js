@@ -125,7 +125,7 @@
                 //console.log("you were wrong")
                 score = 0;
                 document.getElementById("game-output").innerHTML = score;
-                if (hschange === 1) {
+                if (hschange === 1 && score > 0) {
                     sendhighscore()
                 }
             }
@@ -166,7 +166,8 @@
     //Inputs the values and sends the form
         function sendhighscore() {
             $("#p1").val(name);
-            $("#p2").val(highscore)
+            $("#p2").val(highscore);
+            $("#p3").val("send")
             $("#f1").submit()
             //document.querySelector('#p1').value = name;
             //document.querySelector('#p2').value = highscore;
