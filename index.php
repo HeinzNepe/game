@@ -48,6 +48,7 @@
 
             <section class="game-sec">
                 <div id="nameinput-sec">
+                    <p>This site uses cookies. By using this site you consent to the storage of information on your device</p>
                     <form class="form" method="get">
                         <p>Name</p>
                         <input id="name-input" placeholder="Input name here" type="text" name="GamerTag">
