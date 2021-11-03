@@ -9,7 +9,7 @@ if ($value=="send")
         // Tilkoblingsinformasjon
         $tjener = "51.174.65.191:3306";
         $brukernavn = "HeinzConnection";
-        $passord = "SuperSecure123";
+        $passord = "SuperPassord123";
         $database = "highscore";
 
         // Opprette en kobling
