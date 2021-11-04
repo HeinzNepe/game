@@ -17,6 +17,7 @@
 //
 //  4. Debug tools
 //      4.1 Show stats
+//      4.2 Version control
 //
 // list
 //Add a gif thing?
@@ -36,7 +37,7 @@
     let hschange = 0;
     let name = localStorage['name'] || false;
 
-
+    let version = localStorage['version'] || false;
 
 
 //------------------------------------------------------------
@@ -184,4 +185,24 @@
         console.log('Score is ' + score)
         console.log('Highscore is ' + highscore)
         console.log('hschange is ' + hschange)
+    }
+
+
+// 4.2 Version control
+    // Executes the version control
+    v_control()
+
+    // Defines the version control
+    function v_control() {
+                console.log("V-control active")
+                if (version < parseInt(document.querySelector("#version").innerHTML)) {
+                    console.log("Clearing...")
+                    wait(localStorage.clear(), 2000)
+                    localStorage['version'] = parseInt(document.querySelector("#version").innerHTML)
+                }
+    }
+
+    //What to run and then how long untill it does
+    function wait(what, time) {
+        setTimeout(what, time);
     }
