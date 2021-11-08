@@ -105,7 +105,7 @@
 
             <footer>
                 <div id="footer-pre"></div>
-                <div><p>Version </p><p id="version">1,1</p></div>
+                <div><p>Version </p><p id="version">1.1</p></div>
             </footer>
         </div>
     </section>
