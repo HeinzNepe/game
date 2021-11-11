@@ -48,6 +48,7 @@
 
             <section class="game-sec">
                 <div id="nameinput-sec">
+                    <p>This site uses cookies. By using this site you consent to the storage of information on your device</p>
                     <form class="form" method="get">
                         <p>Name</p>
                         <input id="name-input" placeholder="Input name here" type="text" name="GamerTag">
@@ -90,8 +91,6 @@
                     <p id="guess-output">Flip the coin, and you will find out</p>
                 </div>
 
-                <!-- Imports the js -->
-                <script src="JS/index.js"></script>
             </section>
 
             <!-- Section for loading the highscores -->
@@ -106,6 +105,7 @@
 
             <footer>
                 <div id="footer-pre"></div>
+                <div><p>Version </p><p id="version">1.1</p></div>
             </footer>
         </div>
     </section>
@@ -121,6 +121,8 @@
     <script>$("#header-pre").load("header.html");console.log("Header Loaded");</script>
     <script>$("#footer-pre").load("//topheinz.com/sections/footer.html");console.log("Footer Loaded");</script>
 
+    <!-- Imports the js -->
+    <script src="JS/index.js"></script>
 </section>
 </body>
 </html>
