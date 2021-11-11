@@ -118,7 +118,7 @@
 
 
     <!-- JQuery -->
-    <script>$("#header-pre").load("//topheinz.com/sections/header.html");console.log("Header Loaded");</script>
+    <script>$("#header-pre").load("header.html");console.log("Header Loaded");</script>
     <script>$("#footer-pre").load("//topheinz.com/sections/footer.html");console.log("Footer Loaded");</script>
 
 </section>
