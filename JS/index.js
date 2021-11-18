@@ -84,7 +84,7 @@
             else {
                 result = "Tails";
             }
-            return result
+            return result;
     }
 
 // 2.2 Player flip
