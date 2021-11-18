@@ -159,7 +159,6 @@
             localStorage['highscore'] = score
             hschange = 1;
             document.getElementById("highscore-output").innerHTML = score;
-
         }
         //console.log(highscore)
     }

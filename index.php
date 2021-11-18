@@ -105,7 +105,7 @@
 
             <footer>
                 <div id="footer-pre"></div>
-                <div><p>Version </p><p id="version">1</p></div>
+                <div><p>Version </p><p id="version">1.1</p></div>
             </footer>
         </div>
     </section>
@@ -118,8 +118,8 @@
 
 
     <!-- JQuery -->
-    <script>$("#header-pre").load("//topheinz.com/sections/header.html");</script>
-    <script>$("#footer-pre").load("//topheinz.com/sections/footer.html");</script>
+    <script>$("#header-pre").load("header.html");console.log("Header Loaded");</script>
+    <script>$("#footer-pre").load("//topheinz.com/sections/footer.html");console.log("Footer Loaded");</script>
 
     <!-- Imports the js -->
     <script src="JS/index.js"></script>

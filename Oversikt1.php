@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta https-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="text/stylesheet" href="CSS/php.css">
-</head>
-<body>
-   
 <?php
 
  //Lager tabellen   
@@ -58,6 +48,3 @@ while($rad = $resultat->fetch_assoc()) {
    }
    echo "</table>"; // Avslutter tabellen
    ?>
-
-</body>
-</html>
