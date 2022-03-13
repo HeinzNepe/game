@@ -1,4 +1,4 @@
-const url = "https://localhost:7184/"
+const url = "https://api.game.topheinz.com/"
 let scores = []
 
 

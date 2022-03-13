@@ -165,7 +165,20 @@
 // 3.2 Send to database
     //Inputs the values and sends the form
         async function sendhighscore() {
+            try {
+                // Deletes the user
+                await axios({
+                    method: 'post',
+                    url: url + 'score/create',
+                    data: {
+                        uid:uid,
+                        points: highscore
+                    }
+                });
 
+            } catch {
+                console.log("Could not delete user");
+            }
 
 
 
