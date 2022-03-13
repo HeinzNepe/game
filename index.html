@@ -14,7 +14,8 @@
     <!--Linker extern css sheet-->
     <link rel="stylesheet" type="text/css" href="//topheinz.com/CSS/main.css">
     <link rel="stylesheet" type="text/css" href="//topheinz.com/CSS/header.css">
-    <link rel="stylesheet" type="text/css" href="CSS/php.css"
+    <link rel="stylesheet" type="text/css" href="CSS/php.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 
 
@@ -42,7 +43,7 @@
         <div class="main-flex" id="main-content">
             <section class="about-sec">
                 <h>A coin has been tossed</h>
-                </br>
+                <br>
                 <p>On which side will it land?</p>
             </section>
 
@@ -57,15 +58,6 @@
                     </form>
                 </div>
 
-                <!-- Form that the js uses to send data to database -->
-                <form id="f1" method="POST">
-                    <input type="hidden" id="p1" name="GamerTag">
-                    <input type="hidden" id="p2" name="Score">
-                    <input type="hidden" id="p3" name="sender" value="">
-                </form>
-                <?php
-                    require($_SERVER['DOCUMENT_ROOT']."/PostResult.php");
-                ?>
 
                 <!-- These buttons are going to let the player choose heads or tails -->
                 <div class="ui">
@@ -87,25 +79,19 @@
                         </div>
                     </div>
 
-                    <p>Your answer:</p></br>
+                    <p>Your answer:</p><br>
                     <p id="guess-output">Flip the coin, and you will find out</p>
                 </div>
 
             </section>
 
             <!-- Section for loading the highscores -->
-            <section class="highscore-sec">
-                <h1>Current highscores</h1>
-
-                <!--(DONT MESS WITH THIS PLEASE)-->
-                <?php
-                require($_SERVER['DOCUMENT_ROOT']."/Oversikt1.php");
-                ?>
+            <section id="highscore-sec">
             </section>
 
             <footer>
                 <div id="footer-pre"></div>
-                <div><p>Version </p><p id="version">1.1</p></div>
+                <!--<div><p>Version </p><p id="version">1.1</p></div>-->
             </footer>
         </div>
     </section>
@@ -116,13 +102,16 @@
     <!-- Script import -->
     <script crossorigin="anonymous" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <!-- Import axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <!-- JQuery -->
-    <script>$("#header-pre").load("header.html");console.log("Header Loaded");</script>
+    <script>$("#header-pre").load("/Sections/header.html");console.log("Header Loaded");</script>
     <script>$("#footer-pre").load("//topheinz.com/sections/footer.html");console.log("Footer Loaded");</script>
 
     <!-- Imports the js -->
     <script src="JS/index.js"></script>
+    <script src="JS/GetScores.js"></script>
 </section>
 </body>
 </html>

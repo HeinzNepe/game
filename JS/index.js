@@ -89,17 +89,16 @@
 
 // 2.2 Player flip
     // Sets the input into a let
-        function guess(x) {
+        async function guess(x) {
             if (x === "Heads") {
                 guessed = "Heads"
                 //console.log("Guessed Heads")
                 tossfunction()
                 localStorage['highscore'] = highscore;
-            }
-            else {
+            } else {
                 guessed = "Tails"
                 //console.log("Guessed Tails")
-                tossfunction()
+                await(tossfunction())
                 localStorage['highscore'] = highscore;
             }
             return guessed;
@@ -120,12 +119,12 @@
 
     // 2.3.2 If fail do
         //Defining the fail function
-            function fail() {
-                document.getElementById("guess-output").innerHTML = ("Sorry kid, it was " + result )
+            async function fail() {
+                document.getElementById("guess-output").innerHTML = ("Sorry kid, it was " + result)
                 updatehighscore()
                 //console.log("you were wrong")
                 if (hschange === 1 && score > 0) {
-                    sendhighscore()
+                    await sendhighscore()
                 }
                 score = 0;
                 document.getElementById("game-output").innerHTML = score;
@@ -134,7 +133,7 @@
 
     // 2.3.3 When to do what
         //Flips the coin
-            function tossfunction() {
+            async function tossfunction() {
                 //console.log("flipping coin...")
                 console.log("it was " + flip())
                 //Makes sure the result and guess are the same
@@ -143,7 +142,7 @@
                 }
                 //If they guess wrong, set the score to 0 and sends the highscore
                 else {
-                    fail()
+                    await (fail())
                 }
             }
 
@@ -165,14 +164,15 @@
 
 // 3.2 Send to database
     //Inputs the values and sends the form
-        function sendhighscore() {
-            $("#p1").val(name);
+        async function sendhighscore() {
+
+
+
+
+            /*$("#p1").val(name);
             $("#p2").val(highscore);
             $("#p3").val("send")
-            $("#f1").submit()
-            //document.querySelector('#p1').value = name;
-            //document.querySelector('#p2').value = highscore;
-            //document.querySelector("#f1").submit();
+            $("#f1").submit()*/
         }
 
 //------------------------------------------------------------
@@ -189,7 +189,7 @@
 
 // 4.2 Version control
     // Executes the version control
-    v_control()
+    //v_control()
 
     // Defines the version control
     function v_control() {
